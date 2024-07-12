@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE cardapio SYSTEM "definicoes.dtd">
+<cardapio>
+    <prato id= "a01">
+        <nome>Pão com ovo</nome>
+        <descricao> Pão com ovo</descricao>
+        <ingredientes>
+            <ingrediente>Pão</ingrediente>
+            <ingrediente>Ovo</ingrediente>
+        </ingredientes>
+        <preco>4,00</preco>
+        <calorias>235kcal</calorias>
+        <tempoPreparo>5 minutos</tempoPreparo>
+    </prato>
+
+    <prato id= "a02">
+        <nome>Misto quente</nome>
+        <descricao> Pão torrado com queijo e presunto</descricao>
+        <ingredientes>
+            <ingrediente>Pão</ingrediente>
+            <ingrediente>Manteiga</ingrediente>
+            <ingrediente>Queijo</ingrediente>
+            <ingrediente>Presunto</ingrediente>
+        </ingredientes>
+        <preco>4,00</preco>
+        <calorias>300 kcal</calorias>
+        <tempoPreparo>5 minutos</tempoPreparo>
+    </prato>
+
+    <prato id= "a03">
+        <nome>Salada</nome>
+        <descricao>Verduras cortadas temperadas com azeite e sal</descricao>
+        <ingredientes>
+            <ingrediente>Alface</ingrediente>
+            <ingrediente>Tomate</ingrediente>
+            <ingrediente>Cebola roxa</ingrediente>
+            <ingrediente>Cenoura</ingrediente>
+            <ingrediente>Azeite</ingrediente>
+        </ingredientes>
+        <preco>6,00</preco>
+        <calorias>89 kcal</calorias>
+        <tempoPreparo>8 minutos</tempoPreparo>
+    </prato>
+
+    <prato id= "a04">
+        <nome>Panqueca</nome>
+        <descricao>Panqueca de massa doce coberta com mel</descricao>
+        <ingredientes>
+            <ingrediente>Leite</ingrediente>
+            <ingrediente>Ovo</ingrediente>
+            <ingrediente>Açúcar</ingrediente>
+            <ingrediente>Farinha</ingrediente>
+            <ingrediente>Manteiga</ingrediente>
+            <ingrediente>Mel</ingrediente>
+        </ingredientes>
+        <preco>8,00</preco>
+        <calorias>278 kcal</calorias>
+        <tempoPreparo>8 minutos</tempoPreparo>
+    </prato>
+
+    <prato id= "a05">
+        <nome>Pudim</nome>
+        <descricao>Pudim de leite condensado</descricao>
+        <ingredientes>
+            <ingrediente>Leite</ingrediente>
+            <ingrediente>açúcar</ingrediente>
+            <ingrediente>Ovo</ingrediente>
+            <ingrediente>Leite condensado</ingrediente>
+        </ingredientes>
+        <preco>6,00</preco>
+        <calorias>120 kcal</calorias>
+        <tempoPreparo>40 minutos</tempoPreparo>
+    </prato>
+</cardapio>
