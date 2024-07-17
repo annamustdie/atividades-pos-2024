@@ -41,7 +41,7 @@
         <calorias>89 kcal</calorias>
         <tempoPreparo>8 minutos</tempoPreparo>
     </prato>
-
+  
     <prato id= "a04">
         <nome>Panqueca</nome>
         <descricao>Panqueca de massa doce coberta com mel</descricao>
@@ -72,3 +72,5 @@
         <tempoPreparo>40 minutos</tempoPreparo>
     </prato>
 </cardapio>
+
+  <!-- COMMENT SO P FAZER OUTRO COMMIT -->
