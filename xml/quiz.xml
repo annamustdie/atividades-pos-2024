@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE quiz SYSTEM "quiz.dtd">
+<quiz>
+    <questao id="q1">
+        <texto>Quem escreveu a HQ Watchmen?</texto>
+        <alternativas>
+            <alternativa>Shawn Simon</alternativa>
+            <alternativa>Alan Moore</alternativa>
+            <alternativa>Dave Gibbons</alternativa>
+            <alternativa>James O'Barr</alternativa>
+        </alternativas>
+        <correto>Alan Moore</correto>
+    </questao>
+    <questao id="q2">
+        <texto>Quantos ossos tem um ser humano adulto?</texto>
+        <alternativas>
+            <alternativa>206</alternativa>
+            <alternativa>224</alternativa>
+            <alternativa>240</alternativa>
+            <alternativa>233</alternativa>
+        </alternativas>
+        <correto>206</correto>
+    </questao>
+    <questao id="q3">
+        <texto>Qual é o maior planeta do sistema solar?</texto>
+        <alternativas>
+            <alternativa>Terra</alternativa>
+            <alternativa>Marte</alternativa>
+            <alternativa>Júpiter</alternativa>
+            <alternativa>Saturno</alternativa>
+        </alternativas>
+        <correto>Júpiter</correto>
+    </questao>
+    <questao id="q4">
+        <texto>Qual é o elemento químico representado pelo símbolo 'O'?</texto>
+        <alternativas>
+            <alternativa>Ouro</alternativa>
+            <alternativa>Oxigênio</alternativa>
+            <alternativa>Osmio</alternativa>
+            <alternativa>Oganésson</alternativa>
+        </alternativas>
+        <correto>Oxigênio</correto>
+    </questao>
+    <questao id="q5">
+        <texto>Em que ano ocorreu a queda do Muro de Berlim?</texto>
+        <alternativas>
+            <alternativa>1985</alternativa>
+            <alternativa>1989</alternativa>
+            <alternativa>1991</alternativa>
+            <alternativa>1993</alternativa>
+        </alternativas>
+        <correto>1989</correto>
+    </questao>
+</quiz>
