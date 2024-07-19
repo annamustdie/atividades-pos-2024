@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE imobiliaria [
+    <!ELEMENT imobiliaria (imovel+)>
+    <!ELEMENT imovel (descricao, proprietario, endereco, caracteristicas, valor)>
+    <!ELEMENT descricao (#PCDATA)>
+    <!ELEMENT proprietario (nome, (email?, telefone+))>
+    <!ELEMENT nome (#PCDATA)>
+    <!ELEMENT email (#PCDATA)>
+    <!ELEMENT telefone (#PCDATA)>
+    <!ELEMENT endereco (rua, bairro, cidade, numero?)>
+    <!ELEMENT rua (#PCDATA)>
+    <!ELEMENT bairro (#PCDATA)>
+    <!ELEMENT cidade (#PCDATA)>
+    <!ELEMENT numero (#PCDATA)>
+    <!ELEMENT caracteristicas (tamanho, numQuartos, numBanheiros)>
+    <!ELEMENT tamanho (#PCDATA)>
+    <!ELEMENT numQuartos (#PCDATA)>
+    <!ELEMENT numBanheiros (#PCDATA)>
+    <!ELEMENT valor (#PCDATA)>
+]>
+<imobiliaria>
+    <imovel>
+        <descricao>Apartamento em Copacabana</descricao>
+        <proprietario>
+            <nome>Frank Iero</nome>
+            <email>frank.iero@example.com</email>
+            <telefone>+55 11 98765-4221</telefone>
+            <telefone>+55 11 91234-5776</telefone>
+        </proprietario>
+        <endereco>
+            <rua>Av. Atlântica</rua>
+            <bairro>Copacabana</bairro>
+            <cidade>Rio de Janeiro</cidade>
+            <numero>8945</numero>
+        </endereco>
+        <caracteristicas>
+            <tamanho>120m²</tamanho>
+            <numQuartos>2</numQuartos>
+            <numBanheiros>2</numBanheiros>
+        </caracteristicas>
+        <valor>R$ 2.200.000,00</valor>
+    </imovel>
+    <imovel>
+        <descricao>Casa com piscina e churrasqueira elétrica</descricao>
+        <proprietario>
+            <nome>Gerard Way</nome>
+            <telefone>+55 21 99976-5232</telefone>
+        </proprietario>
+        <endereco>
+            <rua>Rua NaNaNa(NaNaNaNaNaNa)</rua>
+            <bairro>Campo Grande</bairro>
+            <cidade>São Paulo</cidade>
+        </endereco>
+        <caracteristicas>
+            <tamanho>250m²</tamanho>
+            <numQuartos>4</numQuartos>
+            <numBanheiros>3</numBanheiros>
+        </caracteristicas>
+        <valor>R$ 2.500.000,00</valor>
+    </imovel>
+    <imovel>
+        <descricao>Apartamento na Zona Sul</descricao>
+        <proprietario>
+            <nome>David Bowie</nome>
+            <email>david.bowie@example.com</email>
+            <telefone>+55 31 98765-4321</telefone>
+        </proprietario>
+        <endereco>
+            <rua>Rua Ziggy Stardust da Silva</rua>
+            <bairro>Centro</bairro>
+            <cidade>Belo Horizonte</cidade>
+            <numero>538</numero>
+        </endereco>
+        <caracteristicas>
+            <tamanho>90m²</tamanho>
+            <numQuartos>2</numQuartos>
+            <numBanheiros>1</numBanheiros>
+        </caracteristicas>
+        <valor>R$ 700.000,00</valor>
+    </imovel>
+    <imovel>
+        <descricao>Kitnet no centro</descricao>
+        <proprietario>
+            <nome>Hayley Williams</nome>
+            <email>hayley.williams@example.com</email>
+            <telefone>+55 41 99826-5632</telefone>
+        </proprietario>
+        <endereco>
+            <rua>Paramore Gomes de Souza</rua>
+            <bairro>Bairro da Caixa D'água</bairro>
+            <cidade>Curitiba</cidade>
+            <numero>SN</numero>
+        </endereco>
+        <caracteristicas>
+            <tamanho>60m²</tamanho>
+            <numQuartos>1</numQuartos>
+            <numBanheiros>1</numBanheiros>
+        </caracteristicas>
+        <valor>R$ 30.000,00</valor>
+    </imovel>
+    <imovel>
+        <descricao>Chácara com piscina</descricao>
+        <proprietario>
+            <nome>Billy Corgan</nome>
+            <telefone>+55 61 98765-4321</telefone>
+        </proprietario>
+        <endereco>
+            <rua>Serra Smashing Pumpkins em SP 2024</rua>
+            <bairro>Zona Rural</bairro>
+            <cidade>Natal</cidade>
+        </endereco>
+        <caracteristicas>
+            <tamanho>600m²</tamanho>
+            <numQuartos>4</numQuartos>
+            <numBanheiros>3</numBanheiros>
+        </caracteristicas>
+        <valor>R$ 300.000,00</valor>
+    </imovel>
+</imobiliaria>
