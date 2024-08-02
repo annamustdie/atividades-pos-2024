@@ -1,0 +1,61 @@
+{
+    "cardapio": {
+        "prato": [
+            {
+                "id": "a01",
+                "nome": "Pão com ovo",
+                "descricao": "Pão com ovo",
+                "ingredientes": {
+                    "ingrediente": ["Pão", "Ovo"]
+                },
+                "preco": 4.00,
+                "calorias": 235,
+                "tempoPreparo": "5 minutos"
+            },
+            {
+                "id": "a02",
+                "nome": "Misto quente",
+                "descricao": "Pão torrado com queijo e presunto",
+                "ingredientes": {
+                    "ingrediente": ["Pão", "Manteiga", "Queijo", "Presunto"]
+                },
+                "preco": 4.00,
+                "calorias": 300,
+                "tempoPreparo": "5 minutos"
+            },
+            {
+                "id": "a03",
+                "nome": "Salada",
+                "descricao": "Verduras cortadas temperadas com azeite e sal",
+                "ingredientes": {
+                    "ingrediente": ["Alface", "Tomate", "Cebola roxa", "Cenoura", "Azeite"]
+                },
+                "preco": 6.00,
+                "calorias": 89,
+                "tempoPreparo": "8 minutos"
+            },
+            {
+                "id": "a04",
+                "nome": "Panqueca",
+                "descricao": "Panqueca de massa doce coberta com mel",
+                "ingredientes": {
+                    "ingrediente": ["Leite", "Ovo", "Açúcar", "Farinha", "Manteiga", "Mel"]
+                },
+                "preco": 8.00,
+                "calorias": 278,
+                "tempoPreparo": "8 minutos"
+            },
+            {
+                "id": "a05",
+                "nome": "Pudim",
+                "descricao": "Pudim de leite condensado",
+                "ingredientes": {
+                    "ingrediente": ["Leite", "Açúcar", "Ovo", "Leite condensado"]
+                },
+                "preco": 6.00,
+                "calorias": 120,
+                "tempoPreparo": "40 minutos"
+            }
+        ]
+    }
+}

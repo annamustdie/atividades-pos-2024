@@ -1,0 +1,103 @@
+{
+    "imobiliaria": {
+        "imovel": [
+            {
+                "descricao": "Apartamento em Copacabana",
+                "proprietario": {
+                    "nome": "Frank Iero",
+                    "email": "frank.iero@example.com",
+                    "telefone": ["+55 11 98765-4221", "+55 11 91234-5776"]
+                },
+                "endereco": {
+                    "rua": "Av. Atlântica",
+                    "bairro": "Copacabana",
+                    "cidade": "Rio de Janeiro",
+                    "numero": 8945
+                },
+                "caracteristicas": {
+                    "tamanho": 120,
+                    "numQuartos": 2,
+                    "numBanheiros": 2
+                },
+                "valor": 2200000.00
+            },
+            {
+                "descricao": "Casa com piscina e churrasqueira elétrica",
+                "proprietario": {
+                    "nome": "Gerard Way",
+                    "telefone": "+55 21 99976-5232"
+                },
+                "endereco": {
+                    "rua": "Rua NaNaNa(NaNaNaNaNaNa)",
+                    "bairro": "Campo Grande",
+                    "cidade": "São Paulo"
+                },
+                "caracteristicas": {
+                    "tamanho": 250,
+                    "numQuartos": 4,
+                    "numBanheiros": 3
+                },
+                "valor": 2500000.00
+            },
+            {
+                "descricao": "Apartamento na Zona Sul",
+                "proprietario": {
+                    "nome": "David Bowie",
+                    "email": "david.bowie@example.com",
+                    "telefone": "+55 31 98765-4321"
+                },
+                "endereco": {
+                    "rua": "Rua Ziggy Stardust da Silva",
+                    "bairro": "Centro",
+                    "cidade": "Belo Horizonte",
+                    "numero": 538
+                },
+                "caracteristicas": {
+                    "tamanho": 90,
+                    "numQuartos": 2,
+                    "numBanheiros": 1
+                },
+                "valor": 700000.00
+            },
+            {
+                "descricao": "Kitnet no centro",
+                "proprietario": {
+                    "nome": "Hayley Williams",
+                    "email": "hayley.williams@example.com",
+                    "telefone": "+55 41 99826-5632"
+                },
+                "endereco": {
+                    "rua": "Paramore Gomes de Souza",
+                    "bairro": "Bairro da Caixa D'água",
+                    "cidade": "Curitiba",
+                    "numero": "SN"
+                },
+                "caracteristicas": {
+                    "tamanho": 60,
+                    "numQuartos": 1,
+                    "numBanheiros": 1
+                },
+                "valor": 30000.00
+            },
+            {
+                "descricao": "Chácara com piscina",
+                "proprietario": {
+                    "nome": "Billy Corgan",
+                    "telefone": "+55 61 99456-7232"
+                },
+                "endereco": {
+                    "rua": "Rua de Vênus",
+                    "bairro": "Planeta Terra",
+                    "cidade": "Brasília",
+                    "numero": 342
+                },
+                "caracteristicas": {
+                    "tamanho": 550,
+                    "numQuartos": 6,
+                    "numBanheiros": 5
+                },
+                "valor": 7500000.00
+            }
+        ]
+    }
+}

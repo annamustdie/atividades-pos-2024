@@ -1,0 +1,46 @@
+{
+    "quiz": {
+        "questao": [
+            {
+                "id": "q1",
+                "texto": "Quem escreveu a HQ Watchmen?",
+                "alternativas": {
+                    "alternativa": ["Shawn Simon", "Alan Moore", "Dave Gibbons", "James O'Barr"]
+                },
+                "correto": "Alan Moore"
+            },
+            {
+                "id": "q2",
+                "texto": "Quantos ossos tem um ser humano adulto?",
+                "alternativas": {
+                    "alternativa": ["206", "224", "240", "233"]
+                },
+                "correto": "206"
+            },
+            {
+                "id": "q3",
+                "texto": "Qual é o maior planeta do sistema solar?",
+                "alternativas": {
+                    "alternativa": ["Terra", "Marte", "Júpiter", "Saturno"]
+                },
+                "correto": "Júpiter"
+            },
+            {
+                "id": "q4",
+                "texto": "Qual é o elemento químico representado pelo símbolo 'O'?",
+                "alternativas": {
+                    "alternativa": ["Ouro", "Oxigênio", "Osmio", "Oganésson"]
+                },
+                "correto": "Oxigênio"
+            },
+            {
+                "id": "q5",
+                "texto": "Em que ano ocorreu a queda do Muro de Berlim?",
+                "alternativas": {
+                    "alternativa": ["1985", "1989", "1991", "1993"]
+                },
+                "correto": "1989"
+            }
+        ]
+    }
+}

@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE cardapio SYSTEM "cardapio.xsd">
 <cardapio>
-    <prato id= "a01">
+    <prato>
+        <id>a01</id>
         <nome>Pão com ovo</nome>
-        <descricao> Pão com ovo</descricao>
+        <descricao>Pão com ovo</descricao>
         <ingredientes>
             <ingrediente>Pão</ingrediente>
             <ingrediente>Ovo</ingrediente>
         </ingredientes>
-        <preco>4,00</preco>
-        <calorias>235kcal</calorias>
+        <preco>4.00</preco>
+        <calorias>235</calorias>
         <tempoPreparo>5 minutos</tempoPreparo>
     </prato>
-
-    <prato id= "a02">
+    <prato>
+        <id>a02</id>
         <nome>Misto quente</nome>
-        <descricao> Pão torrado com queijo e presunto</descricao>
+        <descricao>Pão torrado com queijo e presunto</descricao>
         <ingredientes>
             <ingrediente>Pão</ingrediente>
             <ingrediente>Manteiga</ingrediente>
             <ingrediente>Queijo</ingrediente>
             <ingrediente>Presunto</ingrediente>
         </ingredientes>
-        <preco>4,00</preco>
-        <calorias>300 kcal</calorias>
+        <preco>4.00</preco>
+        <calorias>300</calorias>
         <tempoPreparo>5 minutos</tempoPreparo>
     </prato>
-
-    <prato id= "a03">
+    <prato>
+        <id>a03</id>
         <nome>Salada</nome>
         <descricao>Verduras cortadas temperadas com azeite e sal</descricao>
         <ingredientes>
@@ -37,12 +37,12 @@
             <ingrediente>Cenoura</ingrediente>
             <ingrediente>Azeite</ingrediente>
         </ingredientes>
-        <preco>6,00</preco>
-        <calorias>89 kcal</calorias>
+        <preco>6.00</preco>
+        <calorias>89</calorias>
         <tempoPreparo>8 minutos</tempoPreparo>
     </prato>
-  
-    <prato id= "a04">
+    <prato>
+        <id>a04</id>
         <nome>Panqueca</nome>
         <descricao>Panqueca de massa doce coberta com mel</descricao>
         <ingredientes>
@@ -53,22 +53,22 @@
             <ingrediente>Manteiga</ingrediente>
             <ingrediente>Mel</ingrediente>
         </ingredientes>
-        <preco>8,00</preco>
-        <calorias>278 kcal</calorias>
+        <preco>8.00</preco>
+        <calorias>278</calorias>
         <tempoPreparo>8 minutos</tempoPreparo>
     </prato>
-
-    <prato id= "a05">
+    <prato>
+        <id>a05</id>
         <nome>Pudim</nome>
         <descricao>Pudim de leite condensado</descricao>
         <ingredientes>
             <ingrediente>Leite</ingrediente>
-            <ingrediente>açúcar</ingrediente>
+            <ingrediente>Açúcar</ingrediente>
             <ingrediente>Ovo</ingrediente>
             <ingrediente>Leite condensado</ingrediente>
         </ingredientes>
-        <preco>6,00</preco>
-        <calorias>120 kcal</calorias>
+        <preco>6.00</preco>
+        <calorias>120</calorias>
         <tempoPreparo>40 minutos</tempoPreparo>
     </prato>
-</cardapio> 
+</cardapio>
