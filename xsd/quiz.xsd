@@ -1,0 +1,27 @@
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        xmlns:ns="http://quiz.org"
+        targetNamespace="http://quiz.org"
+        elementFormDefault="qualified">
+    <element name="quiz">
+        <complexType>
+            <sequence>
+                <element name="questao" maxOccurs="unbounded">
+                    <complexType>
+                        <sequence>
+                            <element name="texto" type="string"/>
+                            <element name="alternativas">
+                                <complexType>
+                                    <sequence>
+                                        <element name="alternativa" type="string" maxOccurs="unbounded"/>
+                                    </sequence>
+                                </complexType>
+                            </element>
+                            <element name="correto" type="string"/>
+                        </sequence>
+                        <attribute name="id" type="string" use="required"/>
+                    </complexType>
+                </element>
+            </sequence>
+        </complexType>
+    </element>
+</schema>

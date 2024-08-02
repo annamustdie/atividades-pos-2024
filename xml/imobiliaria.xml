@@ -23,7 +23,7 @@
         <descricao>Apartamento em Copacabana</descricao>
         <proprietario>
             <nome>Frank Iero</nome>
-            <email>frank.iero@example.com</email>
+            <email>frank.iero@gmail.com</email>
             <telefone>+55 11 98765-4221</telefone>
             <telefone>+55 11 91234-5776</telefone>
         </proprietario>
@@ -62,7 +62,7 @@
         <descricao>Apartamento na Zona Sul</descricao>
         <proprietario>
             <nome>David Bowie</nome>
-            <email>david.bowie@example.com</email>
+            <email>david.bowie@gmail..com</email>
             <telefone>+55 31 98765-4321</telefone>
         </proprietario>
         <endereco>
@@ -82,7 +82,7 @@
         <descricao>Kitnet no centro</descricao>
         <proprietario>
             <nome>Hayley Williams</nome>
-            <email>hayley.williams@example.com</email>
+            <email>hayley.williams@gmail.com</email>
             <telefone>+55 41 99826-5632</telefone>
         </proprietario>
         <endereco>

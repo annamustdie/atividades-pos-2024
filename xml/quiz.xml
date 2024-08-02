@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE quiz SYSTEM "quiz.dtd">
+<!DOCTYPE quiz SYSTEM "quiz.xsd">
+
+</quiz>
+
 <quiz>
     <questao id="q1">
         <texto>Quem escreveu a HQ Watchmen?</texto>

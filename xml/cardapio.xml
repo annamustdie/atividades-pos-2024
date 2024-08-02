@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE cardapio SYSTEM "definicoes.dtd">
+<!DOCTYPE cardapio SYSTEM "cardapio.xsd">
 <cardapio>
     <prato id= "a01">
         <nome>Pão com ovo</nome>
@@ -71,6 +71,4 @@
         <calorias>120 kcal</calorias>
         <tempoPreparo>40 minutos</tempoPreparo>
     </prato>
-</cardapio>
-
-  <!-- COMMENT SO P FAZER OUTRO COMMIT -->
+</cardapio> 
