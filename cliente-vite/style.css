@@ -1,0 +1,15 @@
+/* css do pokemon */
+.btn-custom {
+  background-color: #ff0084;
+  color: #fff;
+  border: none;
+}
+.btn-custom:hover {
+  background-color: #e60074;
+  color: #fff;
+}
+.pokemon-card:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s;
+  box-shadow: 0 0 20px rgba(255, 0, 132, 0.5);
+}

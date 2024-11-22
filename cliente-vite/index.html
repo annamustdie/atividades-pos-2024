@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Pokemóns</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f7f7f7; 
+        }
+        h1 {
+            color: #a80038; 
+            text-align: center;
+            margin-top: 20px;
+        }
+        .pokemon-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .pokeball {
+            width: 120px;
+            height: 120px;
+            background-color: #f00; /* Parte inferior */
+            border: 5px solid #000;
+            border-radius: 50%;
+            position: relative;
+            cursor: pointer;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.3s ease;
+        }
+        .pokeball:before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 100%;
+            height: 50%;
+            background-color: #fff; /* Parte superior */
+        }
+        .pokeball:after {
+            content: '';
+            position: absolute;
+            top: calc(50% - 10px);
+            left: calc(50% - 10px);
+            width: 20px;
+            height: 20px;
+            background-color: #fff;
+            border: 4px solid #000;
+            border-radius: 50%;
+            z-index: 1;
+        }
+        .pokemon-info {
+            margin-top: 30px;
+            text-align: center;
+            display: none;
+        }
+        .pokemon-info img {
+            width: 150px;
+            height: 150px;
+        }
+        .jump {
+            animation: jump 0.5s ease forwards;
+        }
+        @keyframes jump {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-150px); }
+            100% { transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Lista de Pokémons</h1>
+    <div class="container">
+        <div class="pokemon-container" id="pokemon-container">
+            <!-- pokebolas e pokemons -->
+        </div>
+        <div class="pokemon-info" id="pokemon-info">
+            <!-- detalhes do pokemon -->
+            <img id="pokemon-image" src="" alt="Pokémon">
+            <h2 id="pokemon-name"></h2>
+            <p><strong>Altura:</strong> <span id="pokemon-height"></span> m</p>
+            <p><strong>Peso:</strong> <span id="pokemon-weight"></span> kg</p>
+            <p><strong>Habilidades:</strong> <span id="pokemon-abilities"></span></p>
+        </div>
+    </div>
+
+    <script>
+        async function loadPokemon() {
+            try {
+                const url = 'https://pokeapi.co/api/v2/pokemon?limit=20'; 
+                const response = await fetch(url);
+                const data = await response.json();
+                const pokemons = data.results;
+
+                const pokemonContainer = document.getElementById('pokemon-container');
+                pokemonContainer.innerHTML = ''; // limpar
+
+                for (const [index, pokemon] of pokemons.entries()) {
+                    const responseDetails = await fetch(pokemon.url);
+                    const pokemonDetails = await responseDetails.json();
+                    const imageUrl = pokemonDetails.sprites.front_default;
+
+                    // criar o elemento da pokebola
+                    const pokeball = document.createElement('div');
+                    pokeball.className = 'pokeball';
+                    pokeball.setAttribute('data-index', index);
+                    
+                    // adiciona pokebola 
+                    pokemonContainer.appendChild(pokeball);
+
+                    // clica na pokebola p mostrar informações
+                    pokeball.addEventListener('click', () => {
+                        //  classe de animação
+                        pokeball.classList.add('jump');
+
+                        // espera a animação terminar
+                        setTimeout(() => {
+                            // remove a classe para permitir a reanimação
+                            pokeball.classList.remove('jump');
+                            displayPokemonInfo(pokemonDetails, imageUrl);
+                        }, 500); // tempo dos pulinho
+                    });
+                }
+
+            } catch (error) {
+                console.error('Erro ao carregar os Pokémon:', error);
+                alert('Não foi possível carregar os Pokémon.');
+            }
+        }
+
+        //exibe os pokemons
+        function displayPokemonInfo(pokemonDetails, imageUrl) {
+            const pokemonInfo = document.getElementById('pokemon-info');
+            const pokemonImage = document.getElementById('pokemon-image');
+            const pokemonName = document.getElementById('pokemon-name');
+            const pokemonHeight = document.getElementById('pokemon-height');
+            const pokemonWeight = document.getElementById('pokemon-weight');
+            const pokemonAbilities = document.getElementById('pokemon-abilities');
+
+            // Detalhes do Pokémon
+            pokemonImage.src = imageUrl;
+            pokemonName.textContent = pokemonDetails.name;
+            pokemonHeight.textContent = pokemonDetails.height / 10; // Altura
+            pokemonWeight.textContent = pokemonDetails.weight / 10; // Peso
+            pokemonAbilities.textContent = pokemonDetails.abilities.map(a => a.ability.name).join(', ');
+
+            // Mostra informações
+            pokemonInfo.style.display = 'block';
+        }
+
+        // Carrega os pokémons ao iniciar
+        loadPokemon();
+    </script>
+
+</body>
+</html>
