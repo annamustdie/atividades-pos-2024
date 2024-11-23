@@ -1,6 +1,5 @@
 const BASE_URL = "https://jsonplaceholder.typicode.com/users";
 
-// Função para listar usuários
 export async function listarUsuarios() {
     try {
         const response = await fetch(BASE_URL);
@@ -12,7 +11,6 @@ export async function listarUsuarios() {
     }
 }
 
-// Função para criar um novo usuário
 export async function criarUsuario(nome, username, email) {
     try {
         const response = await fetch(BASE_URL, {

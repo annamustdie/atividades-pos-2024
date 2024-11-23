@@ -1,6 +1,6 @@
 export function renderPokemonCards(pokemonList, loadImage, loadPokemonDetails) {
     const pokemonCardsContainer = document.getElementById('pokemon-cards');
-    pokemonCardsContainer.innerHTML = ''; // Limpa os cards anteriores
+    pokemonCardsContainer.innerHTML = '';
 
     pokemonList.forEach((pokemon, index) => {
         const card = document.createElement('div');
@@ -16,11 +16,9 @@ export function renderPokemonCards(pokemonList, loadImage, loadPokemonDetails) {
         `;
         pokemonCardsContainer.appendChild(card);
 
-        // Adiciona o evento de clique para abrir os detalhes
         const detailsBtn = document.getElementById(`details-btn-${index}`);
         detailsBtn.addEventListener('click', () => loadPokemonDetails(pokemon.url, pokemon.name));
 
-        // Carrega a imagem do Pokémon
         loadImage(pokemon.url, index);
     });
 }

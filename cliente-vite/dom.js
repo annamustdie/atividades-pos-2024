@@ -28,7 +28,6 @@
         </div>
     </div>
 
-    <!-- Adicionando o Bootstrap JS e o script principal -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script type="module" src="./src/main.js"></script>
 </body>
